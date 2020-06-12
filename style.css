@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+/*========= base ===========*/
+* {
+  /* box-sizing: border-box; */
+} 
+
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #484848;
+  line-height: 28px;
+  font-size: 14px;
+}
+h1{
+  font-weight: 900;
+  line-height: 64px;
+  margin-bottom: 70px;
+  font-size: 60px;
+  color: #333333;
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 18px;
+}
+p {
+  color:#767676;
+  font-size: 14px;
+  line-height: 28px;
+}
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a { 
+  text-decoration: none;
+  color: #000;
+}
+
+/* a:hover { 
+  transition: .3s;
+  opacity: 0.6;
+} */
+
+section {
+  margin-bottom: 100px;
+}
+
+.content-wrapper {
+   width: 67%;
+   margin: 0 auto;
+ }
+ .blue-btn {
+  color: #3BA0A4;
+}
+.blue-btn:hover {
+  border-bottom: solid 1px #3BA0A4;
+}
+
+ /* header  */
+ .header {
+  width: 100% !important;
+}
+.header-nav {
+  height: 80px;
+  display: flex; 
+  justify-content: space-between; /*アイテムの間を均等にする*/
+  align-items: center;  /*大事 headerの子要素を上下中央にそろえる*/
+}
+.header nav ul {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-left: 30px;
+}
+.header-nav li {
+  margin-right: 35px;
+}
+.ao {
+  color: #008489; /*headerの色*/
+}
+.start-btn{
+ margin-right: 45px;
+ padding: 7px 18px;
+ color: white;
+ background-color: #DD1162;
+ border-radius: 10px;
+}
+
+
+/* mainvisual  */
+.mainvisual {
+  position: relative;
+  margin: 0;
+}
+.mainvisual img {
+ width: 100%;
+ height: 600px;
+ object-fit: cover; /*画像がつぶれないようになる*/
+}
+.lodging {
+  width: 465px;
+  height: 420px;
+  position: absolute;
+  top: 80px;
+  left: 800px;
+  color: #333333;
+  background: white;
+  padding: 35px;
+}
+.lodging h1 {
+    font-weight: 900;
+    line-height: 40px;
+    font-size: 40px;
+}
+.greeting {
+  margin-top: 75px;
+}
+.greeting-contents {
+  display: flex;
+}
+.greeting-content {
+  width: 430px;
+  margin-right: 90px;
+}
+.greeting h2 {
+  font-weight: 800;
+  font-size: 24px;
+}
+/* hosting  */
+.check{
+  position: relative;
+  /* padding-left: 25px; */
+  margin-bottom: 45px;
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 23px;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 8px;
+  height: 13px;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  top: .2em;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333333;
+  border-radius:30px;
+}
+.hosting {
+  margin-bottom: 160px;
+}
+.hosting h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 18px;
+}
+
+.hosting-content {
+  width: 290px;
+}
+.hosting-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.hosting-content h2{
+  width: 100%; /*文字をできるだけ横並びにしたいとき*/
+}
+.hosting-content p {
+  width: 100%;
+}
+
+/* host-example  */
+.host-example {
+  margin-bottom: 160px
+}
+blockquote {
+  position: relative;
+  padding-top: 10px;
+  /* box-sizing: border-box; */
+  /* font-style: italic; */
+  /* background: #efefef; */
+  color: #333333;
+  margin: 0;
+  /* padding: 0; */
+}
+blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  content: "“";
+  font-family: sans-serif;
+  color: #FDB32B;
+  font-size: 90px;
+  line-height: 1;
+}
+blockquote p {
+  font-size: 32px;
+  line-height: 40px;
+  color:#484848;
+  margin-bottom: 15px;
+}
+
+blockquote cite {
+  display: block;
+  /* text-align: right; */
+  color:#333333;;
+  font-size: 0.9em;
+}
+.host-example-contents {
+  display: flex; 
+  /* justify-content: space-between;  */
+  align-items: center;  /*大事 headerの子要素を上下中央にそろえる*/
+}
+.host-example-exp1{
+  width: 50%;
+  padding-right: 100px;
+}
+.host-example-exp2{
+  width: 50%;
+  padding-left: 100px;
+}
+.host-people{
+  color:#767676;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.host-example-img{
+  width: 50%;
+}
+.host-check {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #484848;
+  padding: 10px 22px;
+  border: solid 2px #484848;
+}
+/* security  */
+.security {
+  margin-bottom: 160px;
+}
+.security-contents {
+  display: flex;
+  margin-bottom: 100px;
+}
+.security-left {
+  width: 420px;
+  margin-right: 100px;
+}
+
+
+.security-right {
+  width: 50%;
+}
+.security-right li{
+  font-size: 16px;
+  padding-left: 30px;
+  padding-bottom:15px;
+}
+.check2{
+  position: relative;
+  /* padding-left: 25px; */
+  /* margin-bottom: 45px; */
+}
+
+.check2:before {
+  content: "";
+  position: absolute;
+  /* top: 19px; */
+  left: 0px;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 8px;
+  height: 18px;
+  border-right: 1px solid #008489;
+  border-bottom: 1px solid #008489;
+}
+/* pay  */
+.pay {
+margin-bottom: 160px;
+}
+.pay-contents {
+  display:flex;
+  /* text-align: justify; */
+  /* text-justify: inter-ideograph; */
+  justify-content: space-between; 
+  /* align-items: end;   */
+}
+.pay-content {
+  width: 287px;
+}
+
+/* dream  */
+.dream{
+  margin-bottom: 160px;
+  }
+.dream-contents {
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;  
+}
+.dream-content {
+  width: 287px;
+  text-align: center; 
+}
+.dream h1 {
+  align-items: center;
+}
+.dream-content span {
+  font-size: 60px;
+  line-height: 64px;
+}
+/* about  */
+.about {
+  margin-bottom: 160px;
+  }
+.about-contents {
+  display:flex;
+}
+.about-content {
+  width: 50%;
+  padding-right: 80px;
+}
+/* question  */
+.question-contents {
+  display: flex;
+}
+.question-content{
+  width: 510px;
+}
+.margin {
+  margin-right: 15px;
+}
+.question-content li {
+  font-size: 16px; /*色以外はlist　なぜ？*/
+  line-height: 26px;
+  padding: 26px 0px;
+  border-bottom: solid thin #e0f7fa;
+}
+/* details  */
+.details-contents  {
+  display:flex;
+  justify-content: space-between;
+}
+.details-content {
+  width: 260px;
+ 
+}
+.details-img {
+  width: 308px;
+  height: 170px;
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+.details h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.details-content li {
+  /* font-size: 16px; */
+  line-height: 22px;
+}
+/* money  */
+.money {
+  width: 83%;
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+}
+.money-content h2 {
+  text-align: left;
+  margin: 0;
+  font-size: 55px;
+  line-height: 64px;
+  color: white;
+  margin-bottom: 45px;
+}
+.money-content {
+  position: absolute;
+  width: 410px;
+  top:25%;
+  left: 10%;
+}
+.money-content a{
+  background-color: white;
+  padding: 12px 22px;
+  color: #484848;
+  border-radius: 5px;
+  font-weight: 800;
+}
+/* footer */
+.footer {
+  width: 100%;
+ 
+}
+.footer-contents {
+  display:flex;
+  border-bottom: solid thin #e0f7fa;
+}
+.footer-content  {
+  flex-shrink: 0; /*超大事
+  flex-shrink は、display: flex にした要素がもつ小要素の縮小率を表しています。
+  数字が大きいほど縮小率が上がるため、小さくなります。
+  flexboxはコンテナ内に小要素がちょうどよく収まるように、この flex-shrink で幅を自動制御しているということです。
+  0にすると縮小しなくなるので、独自の幅を設定できるようになります。*/
+  width: 195px;
+  height: 200px;
+  padding-right: 70px;
+}
+.footer-content li {
+  width: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.footer-content a {
+  color: #767676;
+}
+.footer-content a:hover {
+  border-bottom: solid 0.5px #767676; 
+}
+.footer-content span{
+  margin-left: 5px;
+  color: white;
+  background-color: #008489;
+  border-radius: 5px;
+  padding: 0px 2px;
+}
+.footer-conent ul {
+  width: 100%;
+}
+.footer-title{
+  margin-bottom: 17px;
+}
+.copylight {
+  padding-bottom: 45px;
+}
+.copylight p{
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
